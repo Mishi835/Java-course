@@ -15,6 +15,8 @@ public class Seminar_1 {
         printFailedStudents(facultyNumber,grades);
         System.out.println("The average score of the class is: " + calculateAverageGrade(grades));
         printTopStudents(facultyNumber,grades);
+
+        sc.close();
     }
     public static void readResults(String[] facultyNum,int[] grades){
         Scanner sc=new Scanner(System.in);
@@ -24,7 +26,7 @@ public class Seminar_1 {
             facultyNum[i]=info[0];
             grades[i]=Integer.parseInt(info[1]);
         }
-
+        sc.close();
     }
     public static void printResults(String[] facultyNum, int[] grade){
         System.out.println("Info: ");
